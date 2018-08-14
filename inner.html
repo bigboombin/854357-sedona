@@ -7,87 +7,92 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-            <a href="/index.html"class="main-header-logo">
+            <a class="main-header-logo">
               <img src="img/index-logo.svg" width="100" height="100" alt="Логотип sedona»">
             </a>
             <ul class="site-navigation">
               <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
               <li><a href="photos.html">ФОТО И ВИДЕО</a></li>
               <li><a href="map.html">КАРТА ШТАТА</a></li>
-              <li class="site-navigation-current"><a href="/inner.html">ГОСТИНИЦЫ</a></li>
+              <li><a href="/inner.html">ГОСТИНИЦЫ</a></li>
             </ul>
       </nav>
     </header>
-<!-- По хедеру замечания такие же как в индексе -->
-
     <main class="container">
       <h1 class="visually-hidden"> Гостиницы </h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
       </section>
-<!-- Тут должен быть блок "найдено-сортировка-по цене- по типу......" . Он не является частью формы. Это просто сортировка.
-По цене, по типу, по рейтингу и стрелочки должны быть ссылками, можно их оформить списком -->
+      <section class="sorting">
+        <p>Найдено: <span>3</span></p>
+        <ul class="sorting-list">
+          <li class="sorting-item"><a href="#"> По цене </a></li>
+          <li class="sorting-item"><a href="#"> По типу </a></li>
+          <li class="sorting-item"><a href="#"> По рейтингу </a></li>
+          <li class="sorting-switch"><a href="#"> <!--стрелка--> </a></li>
+          <li class="sorting-switch"><a href="#"> <!--стрелка--> </a></li>
+        </ul>
+      </section>  
       <section class="catalog">
         <h2 class="visually-hidden">Список отелей</h2>
          <ul>
            <li>
+             <p class="catalog-hotel-image">
+               <a href="catalog-hotel-1.html"> <img src="img/hotel-1.jpg" width="200" height="200" alt="картинка гостиницы"></a>
+             </p>
              <a href="#">
                <h3>AMARA RESORT & SPA</h3>
              </a>
              <p>ГОСТИНИЦА ОТ 4000 Р.</p>
-             <p class="catalog-hotel-image">
-               <a href="catalog-hotel-1.html"> <img src="img/hotel-1.jpg" width="200" height="200" alt="картинка гостиницы"></a>
+             <p>
+              <a href="#" class="button button-info">ПОДРОБНЕЕ</a>
+              <a href="#" class="button button-reservation">ЗАБРОНИРОВАТЬ</a>
              </p>
-<!-- Почему изображение находится в середине разметки блока? По правилу чтения документа (слева-направо) оно должно в блоке читаться первым, значит его нужно размещать первым. Весь остальной контент необходимо обернуть в див для удобства позиционирования. -->
-             <p> <span class="button-info"> <a href="#" class="button">ПОДРОБНЕЕ</a></span>
-<!-- Не понятно зачем ссылки оборачивать в спан. Он лишний -->
-            <span class="button-reservation"><a href="#" class="button">ЗАБРОНИРОВАТЬ</a></span></p>
-<!-- Для звездочек тоже нужно предусмотреть блок (<p>) -->
+             <p class="rating"> <!--для звездочек--> <p>
              <p>РЕЙТИНГ 8,5</p>
            </li>
            <li>
+             <p class="catalog-hotel-image">
+               <a href="catalog-hotel-2.html"> <img src="img/hotel-2.jpg" width="200" height="200" alt="картинка гостиницы"></a>
+             </p>
              <a href="#">
                <h3>DESERT QUAIL INN</h3>
              </a>
              <p>МОТЕЛЬ ОТ 3000 Р.</p>
-             <p class="catalog-hotel-image">
-               <a href="catalog-hotel-2.html"> <img src="img/hotel-2.jpg" width="200" height="200" alt="картинка гостиницы"></a>
-             </p>
-             <p> <span class="button-info"> <a href="#" class="button">ПОДРОБНЕЕ</a></span>
-            <span class="button-reservation"><a href="#" class="button">ЗАБРОНИРОВАТЬ</a></span></p>
+             <a href="#" class="button button-info">ПОДРОБНЕЕ</a>
+             <a href="#" class="button button-reservation">ЗАБРОНИРОВАТЬ</a>
+            <p class="rating"> <!--для звездочек--> <p>
              <p>РЕЙТИНГ 8,5</p>
            </li>
            <li>
+             <a href="catalog-hotel-3.html"> <img src="img/hotel-3.jpg" width="200" height="200" alt="картинка гостиницы"></a>
+           </p>
              <a href="#">
                <h3>VILLAS AT POCO DIABLO</h3>
              </a>
              <p>АПАРТАМЕНТЫ ОТ 2000 Р.</p>
              <p class="catalog-hotel-image">
-               <a href="catalog-hotel-3.html"> <img src="img/hotel-3.jpg" width="200" height="200" alt="картинка гостиницы"></a>
-             </p>
-             <p> <span class="button-info"> <a href="#" class="button">ПОДРОБНЕЕ</a></span>
-            <span class="button-reservation"><a href="#" class="button">ЗАБРОНИРОВАТЬ</a></span></p>
+
+             <a href="#" class="button button-info">ПОДРОБНЕЕ</a>
+             <a href="#" class="button button-reservation">ЗАБРОНИРОВАТЬ</a>
+            <p class="rating"> <!--для звездочек--> <p>
              <p>РЕЙТИНГ 8,5</p>
            </li>
          </ul>
       </section>
     </main>
 
-<!-- По футеру замчания в индексе -->
     <footer class="main-footer">
       <p class="hashtag"> #VISITSEDONA <p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Твиттер</li>
-          <li><a class="social-button" href="#">Фейсбук</li>
-          <li><a class="social-button" href="#">Ютуб</li>
+        <ul class="footer-social">
+          <li><a class="social-button social-button-twitter" href="#">Твиттер</li>
+          <li><a class="social-button social-button-facebook" href="#">Фейсбук</li>
+          <li><a class="social-button social-button-youtube" href="#">Ютуб</li>
         </ul>
       <p class="footer-copyright">
         WEBSITE BY <a class="button" href="https://htmlacademy.ru"> html academy <a>
       </p>
     </footer>
-
-
   </body>
 </html>

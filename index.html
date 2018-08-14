@@ -7,8 +7,7 @@
   <body>
 <header class="main-header">
   <nav class="main-navigation">
-        <a href="/index.html"class="main-header-logo">
-<!-- Логотип это действительно ссылка на главную, но страница не должна ссылаться сама на себя. Поэтому логотип это ссылка на главную на всех страницах проекта кроме главной. Чтобы ссылка перестала являться ссылкой, достаточно удалить у нее аттрибут href -->
+        <a class="main-header-logo">
           <img src="img/index-logo.svg" width="100" height="100" alt="Логотип sedona»">
         </a>
         <ul class="site-navigation">
@@ -20,113 +19,79 @@
   </nav>
 </header>
 <main class="container">
-<!-- Имеет место сделать обертку для промоблока (например <section class="promo"></section>) и в него поместить <h1 class="page-title"> SEDONA </h1> и изображение -->
+ <section class="promo">
   <h1 class="page-title"> SEDONA </h1>
-<!-- Весь текст в промоизображении, кроме "SEDONA", является частью изображения. Кстати, "SEDONA" можно включить в состав изображения  -->
   <img src="" width="300" height="150" alt="картинка sedona">
-  <p class="welcome">
-    <span class="">WELCOME</span>
-    <span class="">-to the gorgeous-</span>
-  </p>
-  <p class="quote">
-  <br> "Because the Grand</br>
-  <br> Canyon sucks!"</br>
-</p>
-  <p><b>СЕДОНА - НЕБОЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО</b><p>
+ </section>
+  <p><b>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО</b><p>
   <section class="features">
-    <h2> РАССМОТРИ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН! </h2>
+    <h2> РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН! </h2>
     <ul class="feutures-list">
-      <li class="feuture-item anotherstyle">
-      <header>
-<!-- Тег header в этом месте не имеет смысла. Пусть будет просто див или секшн -->
+      <li class="feuture-item full-width">
+      <section>
+        <div class="feuture-item-head">
         <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
         <p>№1</p>
-        <p><br>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,</br>
-<!-- <br> убираем. Места в которых можно использовать <br> смотрим в критериях приемки. https://up.htmlacademy.ru/htmlcss/22/examples_br# 
-Перенос слов на другую строку будет реализован с помощью ограничения максимальных размеров (свойство max-width).
-Данное замечание касается всех мест, где использован тег <br>.-->
-          <br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</br>
-        </p>
-<!-- <h3>НАСТОЯЩИЙ ГОРОДОК</h3> , <p>№1</p>, <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p> необходимо обернуть в див, это необходимо для позиционирования -->
-
-        <a href="#"> <img src="#" width="300" height="100" alt="Настоящий городок" >  </a>
-<!-- Где написано, что изображение это ссылка? Изображение действительно нужно обернуть для ограничения максимальных размеров, но не в ссылку, а в блочный элемент (figure , div или p) -->
-      </header>
+        <p> СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ </p>
+       </div>
+        <p class="main-image-1"> <img src="#" width="300" height="100" alt="Настоящий городок" ><p>
+     </section>
       <section class="evidences">
         <ul>
           <li class="evidence-item">
             <h4>ЖИЛЬЕ</h4>
-            <p><br>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ</br>
-               <br> МОТЕЛЕ, КАК В КИНО </br>
-            </p>
+            <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, КАК В КИНО </p>
           </li>
           <li class="evidence-item">
             <h4>ЕДА</h4>
-            <p> <br>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, </br>
-                <br>ВЫ НЕ РАЗОЧАРУЕТЕСЬ </br>
-            </p>
+            <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ </p>
           </li>
           <li class="evidence-item">
             <h4>СУВЕНИРЫ</h4>
-            <p> <br>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО </br>
-                <br>ПРОИЗВОДСТВА </br>
-            </p>
+            <p> НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА </p>
           </li>
         </ul>
         </section>
       </li>
-      <li class="feuture-item anotherstyle">
-<!-- О чем говорит этот класс anotherstyle? Пункты 1 и 2 преимуществ занимают всю ширину вьюпорта, поэтому дополнительный класс имеет смысл назвать full-width -->
+      <li class="feuture-item full-width">
           <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
           <p>№2</p>
-          <p> <br>ДА, ПО НЕМУ МОЖНО ПРОЙТИ, ЕСЛИ КОНЕЧНО </br>
-              <br>ВЫ ОСМЕЛИТЕСЬ </br>
-          </p>
-            <a href="#"> <img src="#" width="300" height="100" alt="Мост дьявола">  </a>
+          <p> ДА, ПО НЕМУ МОЖНО ПРОЙТИ, ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ </p>
+            <p class="main-image-2"> <img src="#" width="300" height="100" alt="Мост дьявола"> <p>
       </li>
       <li class="feuture-item">
         <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
         <p>№3</p>
-        <p> <br>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ </br>
-            <br>НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО </br>
-        </p>
+        <p> ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО </p>
       </li>
       <li class="feuture-item">
         <h3>КРАСИВАЯ ДОРОГА</h3>
         <p>№4</p>
-        <p> <br>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ </br>
-            <br>НЕ СКУЧНО </br>
-        </p>
+        <p> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
       </li>
       <li class="feuture-item">
         <h3>МАЛО ТУРИСТОВ</h3>
         <p>№5</p>
-        <p> <br>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН </br>
-            <br>И ТОЛПИТСЯ ТАМ </br>
-        </p>
+        <p> БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ </p>
       </li>
     </ul>
   </section>
-  <section class="">
+  <section class="search">
     <b> ЗАИНТЕРЕСОВАЛИСЬ? <b>
-    <p> <br>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, </br>
-        <br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ </br>
-    </p>
-    <h2> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-<!-- "ПОИСК ГОСТИНИЦЫ В СЕДОНЕ" Это кнопка (тег button). Она открывает и закрывает форму -->
+    <p> УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+    <button> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     <!--здесь будет форма-->
   </section>
-<!-- Отсутствует разметка для карты. Пока это должен быть просто <section class="map"> -->
+<section class="map">
+  <!-- здесь будет карта  -->
+</section>
 </main>
 <footer class="main-footer">
   <p class="hashtag"> #VISITSEDONA <p>
-  <div class="footer-social">
-<!-- Див лишний. Класс footer-social можно присвоить прямо списку и этого будет достаточно -->
-    <ul>
-      <li><a class="social-button" href="#">Твиттер</li>
-      <li><a class="social-button" href="#">Фейсбук</li>
-      <li><a class="social-button" href="#">Ютуб</li>
-<!-- Для ссылок понадобится дополнительный класс, который будет отвечать за иконку на соцсетях. Должно получиться что-то типа  <a class="social-button social-button-facebook"-->
+    <ul class="footer-social">
+      <li><a class="social-button social-button-twitter" href="#">Твиттер</li>
+      <li><a class="social-button social-button-facebook" href="#">Фейсбук</li>
+      <li><a class="social-button social-button-youtube" href="#">Ютуб</li>
     </ul>
   <p class="footer-copyright">
     WEBSITE BY <a class="button" href="https://htmlacademy.ru"> html academy <a>
