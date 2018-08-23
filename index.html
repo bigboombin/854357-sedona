@@ -76,23 +76,40 @@
       </li>
     </ul>
   </section>
-  <section class="search">
+  <section class="searching">
     <b> ЗАИНТЕРЕСОВАЛИСЬ? <b>
     <p> УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
     <button> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-    <!--здесь будет форма-->
+    <form action="#" method="post" class="form-searching">
+     <div class="form-searching-item">
+       <label for="arrival-date">Дата заезда:</label>
+        <input id="arrival-date" type="text" name="arrival"  placeholder="24 апреля 2017">
+     </div>
+     <div class="form-searching-item">
+       <label for="departure-date">Дата выезда:</label>
+        <input id="departure" type="text" name="departure"  placeholder="4 июля 2017">
+     </div>
+     <div class="form-searching-item">
+       <label for="adults">Взрослые:</label>
+        <input id="adults" type="number" min="0"  step="1" name="adults"  placeholder="2">
+     </div>
+     <div class="form-searching-item">
+       <label for="children">Дети:</label>
+        <input id="children" type="number" min="0" step="1" name="children"  placeholder="0">
+     </div>
+     <button type="submit" class="searching-button" name="searching_button">Найти</button>
+    </form>
   </section>
 <section class="map">
-
-  <!-- здесь будет карта  -->
+  <img src="img/map.jpg" width="1200" height="480" alt="Карта Sedona" >
 </section>
 </main>
 <footer class="main-footer">
   <p class="hashtag"> #VISITSEDONA <p>
     <ul class="footer-social">
-      <li><a class="social-button social-button-twitter" href="#">Твиттер</li>
-      <li><a class="social-button social-button-facebook" href="#">Фейсбук</li>
-      <li><a class="social-button social-button-youtube" href="#">Ютуб</li>
+      <li><a class="social-button social-button-twitter" href="#" aria-label="Follow me on Twitter"></li>
+      <li><a class="social-button social-button-facebook" href="#" aria-label="Follow me on Facebook"></li>
+      <li><a class="social-button social-button-youtube" href="#" aria-label="Follow me on YouTube"></li>
     </ul>
   <p class="footer-copyright">
     WEBSITE BY <a class="button" href="https://htmlacademy.ru"> html academy <a>

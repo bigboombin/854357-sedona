@@ -22,7 +22,58 @@
       <h1 class="visually-hidden"> Гостиницы </h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filters-form" action="#" method="post">
+          <fieldset>
+          <legend> Инфраструктура </legend>
+          <ul class="filters-form-list">
+            <li class="filters-form-item">
+              <label for="pool"> Бассейн </label>
+              <input type="checkbox" name="pool" id="pool" checked>
+            </li>
+            <li class="filters-form-item">
+              <label for="parking"> Парковка </label>
+              <input type="checkbox" name="parking" id="parking">
+            </li>
+            <li class="filters-form-item">
+              <label for=" wi-fi"> wi-fi </label>
+              <input type="checkbox" name=" wi-fi" id="wi-fi">
+            </li>
+          </ul>
+          </fieldset>
+          <fieldset>
+          <legend>Тип жилья</legend>
+          <ul class="filters-form-list">
+            <li class="filters-form-item">
+              <label for="hotel"> Гостиница </label>
+              <input type="checkbox" name="hotel" id="hotel" checked>
+            </li>
+            <li class="filters-form-item">
+              <label for="motel"> Мотель </label>
+              <input type="checkbox" name="motel" id="motel" checked>
+            </li>
+            <li class="filters-form-item">
+              <label for="apartments"> Апартаменты </label>
+              <input type="checkbox" name="apartments" id="apartments" checked>
+            </li>
+          </ul>
+          </fieldset>
+
+            <div class="range-filter">
+           <div class="range-controls">
+      <div class="scale">
+            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="4000"></label>
+        </div>
+      </div>
+
+          <button type="submit" class="filters-button" name="filters_button">Показать</button>
+        </form>
       </section>
       <section class="sorting">
         <p>Найдено: <span>3</span></p>
@@ -97,9 +148,9 @@
     <footer class="main-footer">
       <p class="hashtag"> #VISITSEDONA <p>
         <ul class="footer-social">
-          <li><a class="social-button social-button-twitter" href="#">Твиттер</li>
-          <li><a class="social-button social-button-facebook" href="#">Фейсбук</li>
-          <li><a class="social-button social-button-youtube" href="#">Ютуб</li>
+          <li><a class="social-button social-button-twitter" href="#" aria-label="Follow me on Twitter"></li>
+          <li><a class="social-button social-button-facebook" href="#" aria-label="Follow me on Facebook"></li>
+          <li><a class="social-button social-button-youtube" href="#" aria-label="Follow me on YouTube"></li>
         </ul>
       <p class="footer-copyright">
         WEBSITE BY <a class="button" href="https://htmlacademy.ru"> html academy <a>
