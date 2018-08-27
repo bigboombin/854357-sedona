@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/csscode.css" rel="stylesheet">
   </head>
   <body>
 <header class="main-header">
@@ -23,7 +26,7 @@
   <h1 class="page-title"> SEDONA </h1>
   <p class="promo-image"><img src="img/intro.jpg" width="1200" height="800" alt="картинка sedona"></p>
  </section>
-  <p><b>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО</b><p>
+  <p class="slogan">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО<p>
   <section class="features">
     <h2> РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН! </h2>
     <ul class="feutures-list">
@@ -37,7 +40,7 @@
         <p class="main-image-1"> <img src="img/main-image-1.jpg" width="800" height="254" alt="Настоящий городок" ><p>
      </section>
       <section class="evidences">
-        <ul>
+        <ul class="evidence-list">
           <li class="evidence-item">
             <h4>ЖИЛЬЕ</h4>
             <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, КАК В КИНО </p>
@@ -59,17 +62,17 @@
           <p> ДА, ПО НЕМУ МОЖНО ПРОЙТИ, ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ </p>
             <p class="main-image-2"> <img src="img/main-image-2.jpg" width="800" height="254" alt="Мост дьявола"> <p>
       </li>
-      <li class="feuture-item">
+      <li class="feuture-item columns">
         <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
         <p>№3</p>
         <p> ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО </p>
       </li>
-      <li class="feuture-item">
+      <li class="feuture-item columns">
         <h3>КРАСИВАЯ ДОРОГА</h3>
         <p>№4</p>
         <p> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
       </li>
-      <li class="feuture-item">
+      <li class="feuture-item columns">
         <h3>МАЛО ТУРИСТОВ</h3>
         <p>№5</p>
         <p> БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ </p>
@@ -79,23 +82,29 @@
   <section class="searching">
     <b> ЗАИНТЕРЕСОВАЛИСЬ? <b>
     <p> УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-    <button> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+    <button class="open-form-button"> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     <form action="#" method="post" class="form-searching">
-     <div class="form-searching-item">
-       <label for="arrival-date">Дата заезда:</label>
+      <div class="form-searching-item">
+        <label for="arrival-date">Дата заезда:</label>
         <input id="arrival-date" type="text" name="arrival"  placeholder="24 апреля 2017">
-     </div>
-     <div class="form-searching-item">
-       <label for="departure-date">Дата выезда:</label>
+        <button type="button" class="open-calendar"><img src="" alt=""></button>
+      </div>
+      <div class="form-searching-item">
+        <label for="departure-date">Дата выезда:</label>
         <input id="departure" type="text" name="departure"  placeholder="4 июля 2017">
-     </div>
-     <div class="form-searching-item">
-       <label for="adults">Взрослые:</label>
+        <button type="button" class="open-calendar"><img src="" alt=""></button>
+      </div>
+      <div class="form-searching-item">
+        <label for="adults">Взрослые:</label>
+        <button type="button" class="subtraction"><img src="" alt=""></button>
         <input id="adults" type="number" min="0"  step="1" name="adults"  placeholder="2">
-     </div>
-     <div class="form-searching-item">
-       <label for="children">Дети:</label>
+        <button type="button" class="addition"><img src="" alt=""></button>
+      </div>
+      <div class="form-searching-item">
+        <label for="children">Дети:</label>
+        <button type="button" class="subtraction"><img src="" alt=""></button>
         <input id="children" type="number" min="0" step="1" name="children"  placeholder="0">
+        <button class="addition" type="button"><img src="" alt=""></button>
      </div>
      <button type="submit" class="searching-button" name="searching_button">Найти</button>
     </form>
@@ -112,7 +121,7 @@
       <li><a class="social-button social-button-youtube" href="#" aria-label="Follow me on YouTube"></li>
     </ul>
   <p class="footer-copyright">
-    WEBSITE BY <a class="button" href="https://htmlacademy.ru"> html academy <a>
+    WEBSITE BY <a class="footer-copyright-button" href="https://htmlacademy.ru"> html academy <a>
   </p>
 </footer>
   </body>

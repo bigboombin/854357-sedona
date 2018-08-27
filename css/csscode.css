@@ -1,0 +1,436 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation a {
+  color: #000000;
+}
+
+.slogan{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+}
+.features-list {
+  list-style: none;
+}
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+.full-width {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+.evidence-list{
+list-style: none;
+background-color: #ffffff;
+}
+.evidence-item{
+text-align: center;
+}
+.evidence-item h4{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+.evidence-item p{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+}
+.columns{
+  background-color: #eeeeee
+}
+.searching {
+  background-color: #ffffff;
+}
+.searching b{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+.searching p {
+  line-height: 24;
+}
+
+
+
+
+/* Форма */
+.open-form-button{
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+.open-form-button:hover,
+.open-form-button:focus {
+  background-color: #604e43;
+}
+.open-form-button:active{
+  background-color: #503e33;
+  color: #928a85;
+}
+.open-calendar,
+.addition,
+.subtraction {
+  color: #a9a9a9
+}
+.open-calendar:hover,
+.open-calendar:focus,
+.addition:hover,
+.addition:focus,
+.subtraction:hover,
+.subtraction:focus {
+  color: #000000
+}
+.open-calendar:active,
+.addition:active,
+.subtraction:active {
+  color: #81b3d2
+}
+.form-searching-item{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.form-searching-item input{
+  font: inherit;
+  background-color: #f2f2f2;
+  border: 2px solid  #f2f2f2;
+  text-transform: uppercase;
+
+}
+.form-searching-item input:hover{
+  background-color: #ebebeb;
+  border: 2px solid  #ebebeb;
+}
+.form-searching-item input:focus{
+  background-color: transparent;
+  border: 2px solid  #e5e5e5;
+}
+
+.searching-button{
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+.searching-button:hover,
+.searching-button:focus{
+  background-color: #669ec0;
+}
+.searching-button:active{
+  background-color: #5496bd;
+  color: #5496bd
+}
+
+
+/* footer */
+
+.main-footer {
+  color: #000000;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  /*Делаю прозрачный потому что карта сквозь него виднеется  */
+}
+
+
+.footer-social {
+  text-align: center;
+  list-style: none;
+}
+.social-button{
+  background-color: #81b3d2
+}
+.social-button:hover,
+.social-button:focus{
+  background-color: #669ec0
+}
+.social-button:active{
+  background-color: #5496bd
+}
+.footer-copyright{
+  text-align: center;
+  background-color: transparent;
+}
+.footer-copyright-button{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer-copyright-button:hover,
+.footer-copyright-button:focus{
+  color:#9dc3dc
+}
+.footer-copyright-button:active{
+  color:#bdbbbc
+}
+
+
+
+
+
+/* Inner page */
+.filters {
+  background-color: #769ec2;
+  background-image: url("img/background-inner.jpg");
+  background-repeat: no-repeat;
+
+}
+.filters fieldset {
+  border: none;
+}
+.filters-caption{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.filters-form-list{
+  list-style: none;
+}
+.filters-form-item{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.range-filter {
+  width: 240px;
+  margin: 50px auto; /* для демонстрации */
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+
+.filters-button{
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #ffffff;
+}
+
+
+
+
+
+
+
+/*  сортировка*/
+.sorting p {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.sorting-list{
+    list-style: none;
+}
+.sorting-item{
+  color: #000000;
+ border-bottom: 1px dotted #000000;
+}
+.sorting-item:hover,
+.sorting-item:focus{
+color:  #81b3d2;
+border-bottom: 1px dotted #81b3d2;
+}
+.sorting-item:active{
+  color:  #81b3d2;
+  border: none;
+}
+
+.sorting-item-current{
+  color: #81b3d2
+}
+.sorting-switch{
+}
+
+
+
+
+
+
+.catalog-left-content h3{
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+}
+.catalog-left-content h3:hover,
+.catalog-left-content h3:focus{
+  color: #81b3d2;
+}
+.catalog-left-content h3:active{
+  color: #cacaca
+}
+.price{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.button-info{
+background-color: #81b3d2;
+font-size: 14px;
+line-height: 21px;
+font-weight: 700;
+color: #ffffff;
+
+}
+.button-info:hover,
+.button-info:focus{
+background-color: #669ec0
+}
+.button-info:active{
+  background-color: #5496bd
+}
+.button-reservation{
+
+font-size: 14px;
+line-height: 21px;
+font-weight: 700;
+color: #ffffff;
+background-color:  #766357
+}
+.button-reservation:hover,
+.button-reservation:focus{
+background-color: #604e43
+}
+.button-reservation:active{
+  background-color: #503e33
+}
+.rating-info {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+background-color: #f2f2f2;
+}

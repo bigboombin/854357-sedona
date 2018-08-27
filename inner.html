@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/csscode.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -24,7 +27,7 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters-form" action="#" method="post">
           <fieldset>
-          <legend> Инфраструктура </legend>
+          <legend class="filters-caption"> Инфраструктура </legend>
           <ul class="filters-form-list">
             <li class="filters-form-item">
               <label for="pool"> Бассейн </label>
@@ -41,7 +44,7 @@
           </ul>
           </fieldset>
           <fieldset>
-          <legend>Тип жилья</legend>
+          <legend class="filters-caption">Тип жилья</legend>
           <ul class="filters-form-list">
             <li class="filters-form-item">
               <label for="hotel"> Гостиница </label>
@@ -70,19 +73,19 @@
           <label class="min-price">от <input name="min-price" type="text" value="0"></label>
           <label class="max-price">до <input name="max-price" type="text" value="4000"></label>
         </div>
-      </div>
 
+      </div>
           <button type="submit" class="filters-button" name="filters_button">Показать</button>
         </form>
       </section>
       <section class="sorting">
         <p>Найдено: <span>3</span></p>
         <ul class="sorting-list">
-          <li class="sorting-item"><a href="#"> По цене </a></li>
-          <li class="sorting-item"><a href="#"> По типу </a></li>
-          <li class="sorting-item"><a href="#"> По рейтингу </a></li>
-          <li class="sorting-switch"><a href="#"> <!--сортировать по возрастанию--> </a></li>
-          <li class="sorting-switch"><a href="#"> <!--сортировать по убыванию--> </a></li>
+          <li> <a class="sorting-item-current" href="#"> По цене </a></li>
+          <li> <a class="sorting-item" href="#"> По типу </a></li>
+          <li> <a class="sorting-item" href="#"> По рейтингу </a></li>
+          <li><a  class="sorting-switch" href="#"> <!--сортировать по возрастанию--> </a></li>
+          <li><a class="sorting-switch" href="#"> <!--сортировать по убыванию--> </a></li>
         </ul>
       </section>
       <section class="catalog">
@@ -96,7 +99,7 @@
                <a href="#">
                <h3>AMARA RESORT & SPA</h3>
              </a>
-             <p>ГОСТИНИЦА ОТ 4000 Р.</p>
+             <p class="price">ГОСТИНИЦА ОТ 4000 Р.</p>
              <p>
               <a href="#" class="button button-info">ПОДРОБНЕЕ</a>
               <a href="#" class="button button-reservation">ЗАБРОНИРОВАТЬ</a>
@@ -104,7 +107,7 @@
            </div>
            <div class="catalog-right-content">
              <p class="rating"> <!--для звездочек--> <p>
-             <p>РЕЙТИНГ 8,5</p>
+             <p class="rating-info">РЕЙТИНГ 8,5</p>
            </div>
            </li>
            <li>
@@ -115,13 +118,13 @@
              <a href="#">
                <h3>DESERT QUAIL INN</h3>
              </a>
-             <p>МОТЕЛЬ ОТ 3000 Р.</p>
+             <p class="price">МОТЕЛЬ ОТ 3000 Р.</p>
              <a href="#" class="button button-info">ПОДРОБНЕЕ</a>
              <a href="#" class="button button-reservation">ЗАБРОНИРОВАТЬ</a>
            </div>
            <div class="catalog-right-content">
             <p class="rating"> <!--для звездочек--> <p>
-             <p>РЕЙТИНГ 8,5</p>
+            <p class="rating-info">РЕЙТИНГ 8,9</p>
            </div>
            </li>
            <li>
@@ -131,14 +134,14 @@
              <a href="#">
                <h3>VILLAS AT POCO DIABLO</h3>
              </a>
-             <p>АПАРТАМЕНТЫ ОТ 2000 Р.</p>
+             <p class="price">АПАРТАМЕНТЫ ОТ 2000 Р.</p>
              <p class="catalog-hotel-image">
              <a href="#" class="button button-info">ПОДРОБНЕЕ</a>
              <a href="#" class="button button-reservation">ЗАБРОНИРОВАТЬ</a>
            </div>
            <div class="catalog-right-content">
             <p class="rating"> <!--для звездочек--> <p>
-             <p>РЕЙТИНГ 8,5</p>
+             <p class="rating-info">РЕЙТИНГ 9,2</p>
            </div>
            </li>
          </ul>
