@@ -21,12 +21,12 @@
             </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="inner-container">
       <h1 class="visually-hidden"> Гостиницы </h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters-form" action="#" method="post">
-          <fieldset>
+          <fieldset class="infrastructure">
           <legend class="filters-caption"> Инфраструктура </legend>
           <ul class="filters-form-list">
             <li class="filters-form-item">
@@ -43,7 +43,7 @@
             </li>
           </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="accommodation">
           <legend class="filters-caption">Тип жилья</legend>
           <ul class="filters-form-list">
             <li class="filters-form-item">
@@ -60,7 +60,7 @@
             </li>
           </ul>
           </fieldset>
-
+<div class="filter-buttton">
             <div class="range-filter">
            <div class="range-controls">
       <div class="scale">
@@ -73,9 +73,9 @@
           <label class="min-price">от <input name="min-price" type="text" value="0"></label>
           <label class="max-price">до <input name="max-price" type="text" value="4000"></label>
         </div>
-
       </div>
           <button type="submit" class="filters-button" name="filters_button">Показать</button>
+        </div>
         </form>
       </section>
       <section class="sorting">
@@ -90,7 +90,7 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список отелей</h2>
-         <ul>
+         <ul class="catalog-list">
            <li>
              <p class="catalog-hotel-image">
                <a href="catalog-hotel-1.html"> <img src="img/hotel1.jpg" width="135" height="90" alt="картинка гостиницы"></a>
@@ -128,6 +128,7 @@
            </div>
            </li>
            <li>
+           <p class="catalog-hotel-image">
              <a href="catalog-hotel-3.html"> <img src="img/hotel3.jpg" width="135" height="90" alt="картинка гостиницы"></a>
            </p>
            <div class="catalog-left-content">
@@ -135,7 +136,6 @@
                <h3>VILLAS AT POCO DIABLO</h3>
              </a>
              <p class="price">АПАРТАМЕНТЫ ОТ 2000 Р.</p>
-             <p class="catalog-hotel-image">
              <a href="#" class="button button-info">ПОДРОБНЕЕ</a>
              <a href="#" class="button button-reservation">ЗАБРОНИРОВАТЬ</a>
            </div>
