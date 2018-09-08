@@ -11,9 +11,22 @@ body {
 
   background-color: #ffffff;
 }
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+/*
 .visualy-hidden {
   display: none;
-}
+}*/
+
 a {
   text-decoration: none;
 }
@@ -63,9 +76,16 @@ a {
   font-weight: 700;
   color: #000000;
 }
+
 .full-width {
   color: #ffffff;
   background-color: #81b3d2;
+}
+.full-width h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
 }
 .evidence-list{
 list-style: none;
@@ -90,6 +110,11 @@ text-align: center;
 }
 .columns{
   background-color: #eeeeee
+}
+.columns h3{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
 }
 .searching {
   background-color: #ffffff;
@@ -192,47 +217,7 @@ text-align: center;
 }
 
 
-/* footer */
 
-.main-footer {
-  color: #000000;
-
-  background-color: rgba(255, 255, 255, 0.5);
-  /*Делаю прозрачный потому что карта сквозь него виднеется  */
-}
-
-
-.footer-social {
-  text-align: center;
-  list-style: none;
-}
-.social-button{
-  background-color: #81b3d2
-}
-.social-button:hover,
-.social-button:focus{
-  background-color: #669ec0
-}
-.social-button:active{
-  background-color: #5496bd
-}
-.footer-copyright{
-  text-align: center;
-  background-color: transparent;
-}
-.footer-copyright-button{
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-}
-.footer-copyright-button:hover,
-.footer-copyright-button:focus{
-  color:#9dc3dc
-}
-.footer-copyright-button:active{
-  color:#bdbbbc
-}
 
 
 
@@ -241,7 +226,7 @@ text-align: center;
 /* Inner page */
 .filters {
   background-color: #769ec2;
-  background-image: url("img/background-inner.jpg");
+  background-image: url("../img/background-inner.jpg");
   background-repeat: no-repeat;
 
 }
@@ -457,19 +442,6 @@ background-color: #f2f2f2;
 
 
                           /*  СЕТКА */
-body{
-  min-height: 2760px;
-  width: 1200px;
-}
-.main-header {
-  /* Временно для сетки */
-  min-height: 56px;
-}
-.main-navigation{
-  display: flex;
-  justify-content: center;
-}
-
 }
 .main-header-logo {
   width: 140px;
@@ -481,68 +453,85 @@ body{
   padding: 0;
 
   list-style: none;
-
-  /* Временно для сетки */
-  min-height: 56px;
-  display: block;
-  margin: 0px auto auto auto;
 }
 
 
 
 .promo {
   display: block;
-  min-height: 509px;
-  margin-bottom: 61px
-  width: 100%;
+
+  margin-bottom: 55px;
+
+}
+.promo-image {
+  margin: 0;
+  padding: 0;
 }
 .slogan {
   margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 19px;
     padding: 0;
-
-    /* Временно для сетки */
-    min-height: 52px;
-    width: 636;
+    width: 441px;
+    text-align: center;
+    margin-left: 378px;
 }
 .features-caption{
   margin: 0;
     margin-bottom: 56px;
     padding: 0;
-
-    /* Временно для сетки */
-    min-height: 26px;
 }
 
 .features {
-  min-height: 1176px;
 }
 .features-caption
 .feutures-list{
-  min-height: 1098px;
 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.feutures-list{
+  padding: 0 !important;
+}
+.main-image-1{
+  margin: 0;
+  padding: 0;
+}
+.main-image-2{
+  margin: 0;
+  padding: 0;
+}
+.main-image-1 img,
+.main-image-2 img{
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 .feuture-item:first-child {
-  min-height: 586px;
-}
-.feuture-item:nth-child(2){
-  min-height: 256px;
-  display: flex;
 
 }
+.feuture-item:nth-child(2){
+  display: flex;
+}
+.feuture-item{
+  list-style: none;
+}
 .evidence-list{
-  min-height: 330px;
+
   display: flex;
   margin: 0;
   list-style: none;
-  padding: 0;
+  padding: 0 !important;
+  margin: 0;
 }
 .evidence-item{
-  width: 400;
-  min-height: 256px;
+  width: 400px;
+
+  margin: 0;
+  padding: 0;
 }
 .last-feutures {
-  min-height: 256px;
+
   display: flex;
   margin: 0;
   list-style: none;
@@ -550,17 +539,17 @@ body{
   margin-bottom: 54px;
   }
 .columns{
-  width: 400;
-  min-height: 256px;
+  width: 400px;
+
 }
 .feuture-container{
-  min-height: 256px;
+
   display: flex;
   margin: 0;
   padding: 0;
 }
 .feuture-item-head{
-  min-height: 256px;
+
   width: 400px;
 }
 
@@ -571,28 +560,42 @@ body{
   text-align: center;
 }
 .searching-info{
-  min-height: 150px;
+
 }
 
-.main-footer{
+
+
+
+
+.main-footer {
   display: flex;
-  min-height: 121px;
-  justify-content: space-around;
 }
-.hashtag{
-  width: 240;
-  margin-left: 71;
-  padding: auto;
+.main-footer p{
+  margin: 0;
+  padding: 0;
 }
-.footer-social{
-  margin-left: 89;
-  width: 400px;
-  padding: auto;
+.hashtag {
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
 }
-.footer-copyright{
-width: 240px;
-margin-left: 88;
+.footer-social {
+  width: 145px;
+  text-align: center;
 }
+
+.footer-social ul {
+  list-style: none;
+}
+
+
+.footer-copyright {
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
+  text-align: center;
+}
+
 
 
 
@@ -645,4 +648,383 @@ margin-left: 88;
 .catalog-right-content{
   margin-left: 372px;
   width: 313px;
+}
+
+
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+/* Микроразметка */
+
+.main-header {
+  position: relative;
+
+}
+
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+.main-navigation {
+  padding: 0 60px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+
+.site-navigation-item {
+  width: 240px;
+}
+
+.site-navigation-item:nth-child(2) {
+  margin-right: auto;
+}
+
+.site-navigation-item.right {
+ text-align: right;
+}
+
+
+
+
+
+.feuture-item-head-1{
+  text-align: center;
+  padding: 27px 51px 0px 50px;
+}
+.feuture-item-head-1 h3{
+  display: block;
+  width: 120px;
+  margin-left: 90px;
+  margin-bottom: 24px;
+
+}
+.feuture-item-number-1{
+margin-bottom: 22px;
+}
+.feuture-item-description-1{
+  width: 300px;
+}
+
+
+
+.feuture-item-head-2{
+  text-align: center;
+  padding: 26px 51px 0px 50px;
+}
+.feuture-item-head-2 h3{
+  width: 151px;
+  margin-left: 75px;
+  margin-bottom: 24px;
+}
+.feuture-item-number-2{
+  margin-bottom: 23px;
+
+}
+.feuture-item-description-2{
+  width: 303px;
+}
+.evidence-item{
+}
+
+.evidence-item-1{
+  padding: 161px 51px 81px 49px;
+  text-align: center;
+}
+.evidence-item-1 h4 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.evidence-item-1 p {
+  width: 299px;
+  margin: 0;
+  padding: 0;
+}
+.evidence-item-2{
+  padding: 161px 51px 81px 49px;
+  text-align: center;
+}
+.evidence-item-2 h4 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.evidence-item-2 p {
+  width: 299px;
+  margin: 0;
+  padding: 0;
+}
+.evidence-item-3{
+  padding: 161px 51px 81px 49px;
+  text-align: center;
+}
+.evidence-item-3 h4 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.evidence-item-3 p {
+  width: 299px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.columns{
+  text-align:center;
+  padding-top: 46px;
+
+
+}
+.columns h3{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+
+}
+.column-1 h3{
+width: 118px;
+margin-left: ;
+margin-left: 140px;
+}
+.feuture-item-number {
+  margin-bottom: 21px;
+
+}
+.feuture-item-description-3{
+width: 211px;
+margin-left: 93px;
+}
+
+.column-2 h3{
+width: 102px;
+margin-left: 149px ;
+}
+.feuture-item-number {
+
+}
+.feuture-item-description-4{
+width: 264px;
+margin-left: 68px ;
+}
+
+.column-3 h3{
+width: 102px;
+margin-left: 149px ;
+}
+.feuture-item-number {
+
+}
+.feuture-item-description-5{
+width: 249px;
+margin-left: 74px  ;
+}
+.columns {
+  padding-bottom: 45px;
+}
+.searching-info b {
+  display: block;
+  margin-top: -5px;
+}
+.searching-info p{
+  margin: 0;
+  padding: 0;
+  width: 438px;
+  text-align: center;
+  height: 300px;
+  margin-left: 50%
+}
+
+
+
+
+
+
+
+/*  ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ */
+.evidence-item{
+  position: relative;
+}
+.evidence-item-1 h4::before{
+  content: "";
+
+ position: absolute;
+ top: 61px;
+ left: 162px;
+
+ width: 75px;
+ height: 75px;
+
+ background-image: url("../img/icon-1.svg");
+ background-repeat: no-repeat;
+ background-position: 0 0;
+}
+.evidence-item-2 h4::before{
+  content: "";
+
+ position: absolute;
+ top: 61px;
+ left: 162px;
+
+ width: 74px;
+ height: 76px;
+
+ background-image: url("../img/icon-3.svg");
+ background-repeat: no-repeat;
+ background-position: 0 0;
+}
+.evidence-item-3 h4::before{
+  content: "";
+
+ position: absolute;
+ top: 57px;
+ left: 168px;
+
+ width: 85px;
+ height: 85px;
+
+ background-image: url("../img/icon-2.svg");
+ background-repeat: no-repeat;
+ background-position: 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer стили */
+
+.main-footer {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.5);
+  /*Делаю прозрачный потому что карта сквозь него виднеется  */
+}
+
+.hashtag{
+  margin: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  padding-top: 40px;
+  margin-left: 132px;
+}
+
+.footer-social {
+  text-align: center;
+  list-style: none;
+  margin-left: 72px;
+  padding-top: 30px;
+}
+.footer-social ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.social-button{
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+}
+.social-button:hover,
+.social-button:focus{
+  background-color: #669ec0
+}
+.social-button:active{
+  background-color: #5496bd
+}
+.footer-copyright{
+  text-align: center;
+  padding-top: 30px;
+  margin-left: auto;
+
+}
+.footer-copyright b {
+font-size: 14px;
+line-height: 26px;
+font-weight: 400;
+}
+.footer-copyright-button{
+  width: 115px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.footer-copyright-button:hover:before,
+.footer-copyright-button:focus:before{
+  color:#9dc3dc;
+}
+.footer-copyright-button:active{
+  color:#bdbbbc
+}
+
+
+/* Микроразметка формы */
+.open-form-button {
+  display: block;
+  width: 568px;
+  height: 86px;
+  margin-left: 316px;
+  margin-top: -120px;
+
+}
+.form-searching{
+  display: none;
+}
+.searching,
+.searching-info,
+.searching-main-info
+{
+  margin: 0;
+  padding: 0;
+  height: 241px;
+}
+.searching-main-info{
+  width: 435px;
+  margin-left: 382px;
 }
