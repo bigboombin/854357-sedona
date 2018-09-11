@@ -20,12 +20,14 @@ html {
 *::after {
   box-sizing: inherit;
 }
+/* .main-background{
+  background-color: #f1f1f1;
+  z-index: -10;
+  width: 1280px;
+  position: absolute;
+} */
 
 
-/*
-.visualy-hidden {
-  display: none;
-}*/
 
 a {
   text-decoration: none;
@@ -226,7 +228,8 @@ text-align: center;
 /* Inner page */
 .filters {
   background-color: #769ec2;
-  background-image: url("../img/background-inner.jpg");
+  background-image: url("../img/background-inner-1.jpg");
+  background-size: 1200px 217px;
   background-repeat: no-repeat;
 
 }
@@ -460,7 +463,7 @@ background-color: #f2f2f2;
 .promo {
   display: block;
 
-  margin-bottom: 55px;
+  margin-bottom: 53px;
 
 }
 .promo-image {
@@ -469,7 +472,7 @@ background-color: #f2f2f2;
 }
 .slogan {
   margin: 0;
-    margin-bottom: 19px;
+    margin-bottom: 29px;
     padding: 0;
     width: 441px;
     text-align: center;
@@ -477,13 +480,13 @@ background-color: #f2f2f2;
 }
 .features-caption{
   margin: 0;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
     padding: 0;
 }
 
 .features {
 }
-.features-caption
+
 .feutures-list{
 
   list-style: none;
@@ -559,8 +562,9 @@ background-color: #f2f2f2;
 .searching{
   text-align: center;
 }
-.searching-info{
-
+.map img{
+  position: absolute;
+  z-index: -1;
 }
 
 
@@ -655,6 +659,10 @@ background-color: #f2f2f2;
 .wrap {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
+  box-shadow: 0 -5px 0 5px #f1f1f1;
+  box-shadow: 0 -40px 0 40px #f2f2f2;
+
 }
 
 
@@ -771,7 +779,7 @@ margin-bottom: 22px;
   padding: 0;
 }
 .evidence-item-2{
-  padding: 161px 51px 81px 49px;
+  padding: 161px 51px 82px 49px;
   text-align: center;
 }
 .evidence-item-2 h4 {
@@ -802,7 +810,7 @@ margin-bottom: 22px;
 
 .columns{
   text-align:center;
-  padding-top: 46px;
+  padding-top: 48px;
 
 
 }
@@ -818,7 +826,7 @@ margin-left: ;
 margin-left: 140px;
 }
 .feuture-item-number {
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 
 }
 .feuture-item-description-3{
@@ -855,17 +863,17 @@ margin-left: 74px  ;
 .searching-info b {
   display: block;
   margin-top: -5px;
+  margin-bottom: 23px;
+
 }
-.searching-info p{
-  margin: 0;
-  padding: 0;
-  width: 438px;
-  text-align: center;
-  height: 300px;
-  margin-left: 50%
+.searching-info div{
+line-height: 24px;
+margin-bottom: 44px;
 }
 
-
+.features{
+  margin-bottom: 57px;
+}
 
 
 
@@ -930,9 +938,11 @@ margin-left: 74px  ;
 /* footer стили */
 
 .main-footer {
+  margin-top: 477px;
   color: #000000;
-  background-color: rgba(255, 255, 255, 0.5);
-  /*Делаю прозрачный потому что карта сквозь него виднеется  */
+  background-color: rgba(255, 255, 255, 0.8);
+      padding-bottom: 37px;
+      padding-top: 36px;
 }
 
 .hashtag{
@@ -940,7 +950,7 @@ margin-left: 74px  ;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  padding-top: 40px;
+  margin-top: 10px;
   margin-left: 132px;
 }
 
@@ -948,7 +958,7 @@ margin-left: 74px  ;
   text-align: center;
   list-style: none;
   margin-left: 72px;
-  padding-top: 30px;
+
 }
 .footer-social ul{
   list-style: none;
@@ -968,7 +978,7 @@ margin-left: 74px  ;
   justify-content: center;
 }
 
-}
+
 .social-button:hover,
 .social-button:focus{
   background-color: #669ec0
@@ -978,14 +988,19 @@ margin-left: 74px  ;
 }
 .footer-copyright{
   text-align: center;
-  padding-top: 30px;
+
   margin-left: auto;
+  width: 204px;
+  display: flex;
+  margin-left: 233px;
+    margin-top: 12px;
 
 }
 .footer-copyright b {
 font-size: 14px;
 line-height: 26px;
 font-weight: 400;
+margin-right: 8px
 }
 .footer-copyright-button{
   width: 115px;
@@ -993,15 +1008,22 @@ font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
+margin-top: -9px;
+}
+.footer-copyright-button:hover path,
+.footer-copyright-button:focus path{
+  fill: #81b3d2;
+}
+.footer-copyright-button:active path{
+  fill :#bdbbbc
+}
 
-}
-.footer-copyright-button:hover:before,
-.footer-copyright-button:focus:before{
-  color:#9dc3dc;
-}
-.footer-copyright-button:active{
-  color:#bdbbbc
-}
+
+
+
+
+
+
 
 
 /* Микроразметка формы */
@@ -1010,21 +1032,212 @@ font-weight: 400;
   width: 568px;
   height: 86px;
   margin-left: 316px;
-  margin-top: -120px;
+
 
 }
 .form-searching{
-  display: none;
+  /* display: none; */
 }
-.searching,
-.searching-info,
-.searching-main-info
+
+.modal {
+  color: #000000;
+  background-color: #ffffff;
+  background-position: 0 0;
+  position: absolute;
+  margin-top: 2px;
+}
+.search-modal {
+  padding: 55px;
+  left: 316px;
+  width: 568px;
+}
+.form-searching div{
+
+}
+.form-searching-item-1{
+  margin-bottom: 29px;
+}
+
+.form-searching-item-2{
+  margin-bottom: 30px;
+}
+.quantity-block {
+  display: flex;
+  margin-bottom: 54px;
+  width: 459px;
+  justify-content: space-between;
+}
+ .form-searching-item-3{
+   width: 227px;
+ }
+ .form-searching-item-4{
+   width: 179px
+ }
+
+.form-searching label{
+  font-weight: 700;
+}
+.date{
+  box-sizing: border-box;
+  width: 346px;
+  padding: 4px 13px;
+  padding-right: 51px;
+
+  font: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+
+  border: 0;
+  border: 2px solid #f2f2f2;
+  outline: none;
+}
+.number {
+  box-sizing: border-box;
+  width: 114px;
+  padding: 4px 38px 5px 38px;
+
+  font: inherit;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  outline: none;
+}
+.date:hover,
+.number:hover{
+  background-color: #ebebeb;
+}
+.date:focus,
+.number:focus{
+  background-color: #ffffff;
+}
+
+.form-searching-item-1 label{
+    margin-right: 19px;
+}
+.form-searching-item-2 label{
+    margin-right: 16px;
+}
+.form-searching-item-3 label{
+    margin-right: 37px;
+}
+.form-searching-item-4 label{
+    margin-right: 23px;
+}
+
+/* Стили КНОПОК В ФОРМЕ */
+.form-searching div  {
+  position: relative;
+}
+.form-searching div button{
+  position: absolute;
+}
+.searching-button {
+  width: 458px;
+  height: 58px;
+}
+.open-calendar{
+  width: 38px;
+  height: 38px;
+
+  font-size: 0;
+
+  background-color: #f2f2f2;
+  border: 0;
+
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}
+.subtraction {
+  width: 38px;
+  height: 38px;
+
+  font-size: 0;
+
+  background-color: #f2f2f2;
+  border: 0;
+
+  cursor: pointer;
+  top: 0;
+  left: 112px;
+}
+.form-searching-item-4 .subtraction{
+  left: 65px;
+}
+.subtraction::before {
+  content: "";
+
+  position: absolute;
+
+  width: 12px;
+  height: 3px;
+  left: 13px;
+  top: 18px;
+  background-color: #a9a9a9;
+}
+.addition {
+  width: 38px;
+  height: 38px;
+
+  font-size: 0;
+
+  background-color: #f2f2f2;
+  border: 0;
+
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}
+.addition::before,
+.addition::after {
+  content: "";
+
+  position: absolute;
+  right: 13px;
+  top: 18px;
+  width: 12px;
+  height: 3px;
+
+  background-color: #a9a9a9;
+}
+.addition::before{
+  transform: rotate(90deg);
+}
+
+.addition:hover::before,
+.addition:hover::after,
+.addition:focus::before,
+.addition:focus::after,
+.subtraction:hover::before,
+.subtraction:focus::before
 {
-  margin: 0;
-  padding: 0;
-  height: 241px;
+  background-color: #000000;
 }
-.searching-main-info{
-  width: 435px;
-  margin-left: 382px;
+.addition:active::before,
+.addition:active::after,
+.subtraction:active::before
+{
+  background-color: #81b3d2;
+}
+.open-calendar path{
+  fill: #cacaca;
+}
+.open-calendar:hover path,
+.open-calendar:focus path{
+  fill: #000000;
+}
+.open-calendar:active path{
+  fill: #81b3d2;
 }
