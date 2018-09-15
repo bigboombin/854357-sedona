@@ -10,16 +10,16 @@
   <body>
   <div class="wrap">
     <header class="main-header">
+      <a href="index.html" class="main-header-logo">
+        <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип sedona»">
+      </a>
       <nav class="main-navigation">
-            <a class="main-header-logo">
-              <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип sedona»">
-            </a>
-            <ul class="site-navigation">
-              <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
-              <li><a href="photos.html">ФОТО И ВИДЕО</a></li>
-              <li><a href="map.html">КАРТА ШТАТА</a></li>
-              <li><a href="/inner.html">ГОСТИНИЦЫ</a></li>
-            </ul>
+        <ul class="site-navigation">
+          <li class="site-navigation-item "><a href="info.html">ИНФОРМАЦИЯ</a></li>
+          <li class="site-navigation-item"><a href="photos.html">ФОТО И ВИДЕО</a></li>
+          <li class="site-navigation-item right"><a href="map.html">КАРТА ШТАТА</a></li>
+          <li class="site-navigation-item right site-navigation-item-active"><a href="inner.html">ГОСТИНИЦЫ</a></li>
+        </ul>
       </nav>
     </header>
     <main class="inner-container">
@@ -27,7 +27,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
 
-        <form class="filters-form" action="#" method="post">
+        <form class="filters-form" action="https://echo.htmlacademy.ru" name="filter" method="post">
           <fieldset class="infrastructure">
               <legend class="filters-caption-1"> Инфраструктура </legend>
               <ul class="filters-form-list">
@@ -123,7 +123,7 @@
                <a href="#">
                <h3 class="hotel-name">AMARA RESORT & SPA</h3>
              </a>
-             <p class="price">ГОСТИНИЦА ОТ 4000 Р.</p>
+             <p class="price">ГОСТИНИЦА <span class="price-1">ОТ 4000 Р.</span></p>
              <div class="catalog-buttons">
               <a href="#" class="button button-info">ПОДРОБНЕЕ</a>
               <a href="#" class="button button-reservation">ЗАБРОНИРОВАТЬ</a>
@@ -142,7 +142,7 @@
              <a href="#">
                <h3 class="hotel-name">DESERT QUAIL INN</h3>
              </a>
-             <p class="price">МОТЕЛЬ ОТ 3000 Р.</p>
+             <p class="price">МОТЕЛЬ <span class="price-2"> ОТ 3000 Р.</span></p>
              <div class="catalog-buttons">
               <a href="#" class="button button-info">ПОДРОБНЕЕ</a>
               <a href="#" class="button button-reservation">ЗАБРОНИРОВАТЬ</a>
@@ -161,7 +161,7 @@
              <a href="#">
                <h3 class="hotel-name">VILLAS AT POCO DIABLO</h3>
              </a>
-             <p class="price">АПАРТАМЕНТЫ ОТ 2000 Р.</p>
+             <p class="price">АПАРТАМЕНТЫ <span class="price-3"> ОТ 2000 Р.</span></p>
              <div class="catalog-buttons">
               <a href="#" class="button button-info">ПОДРОБНЕЕ</a>
               <a href="#" class="button button-reservation">ЗАБРОНИРОВАТЬ</a>
