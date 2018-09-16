@@ -29,7 +29,7 @@ html {
   position: relative;
   box-shadow: 0 -5px 0 5px #f1f1f1;
   background-color: #ffffff;
-  z-index: -100;
+  /* z-index: -100; */
 
 }
 
@@ -291,6 +291,7 @@ text-align: center;
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
+  padding-top: 1px;
 }
 
 
@@ -533,7 +534,7 @@ background-color: #f2f2f2;
 }
 .map img{
   position: absolute;
-  z-index: -1;
+  z-index: 11;
 }
 
 
@@ -774,9 +775,10 @@ margin-left: 74px  ;
 }
 .searching-info div{
 line-height: 24px;
-margin-bottom: 48px;
 }
-
+.searching-main-info{
+  margin-bottom: 45px;
+}
 
 .features{
   margin-bottom: 57px;
@@ -846,11 +848,14 @@ margin-bottom: 48px;
 /* footer стили */
 
 .main-footer {
-  margin-top: 477px;
+  margin-top: 474px;
   color: #000000;
   background-color: rgba(255, 255, 255, 0.8);
       padding-bottom: 37px;
       padding-top: 36px;
+      z-index: 15;
+position: absolute;
+width: 100%;
 }
 
 .hashtag{
@@ -953,6 +958,10 @@ margin-top: -9px;
   background-position: 0 0;
   position: absolute;
   margin-top: 2px;
+  z-index: 14;
+  margin-top: -1px;
+
+
 }
 .search-modal {
   padding: 55px;
@@ -988,7 +997,7 @@ margin-top: -9px;
 .date{
   box-sizing: border-box;
   width: 346px;
-  padding: 4px 13px;
+  padding: 5px 13px 4px 13px;
   padding-right: 51px;
 
   font: inherit;
@@ -1022,6 +1031,18 @@ margin-top: -9px;
   border: 2px solid #f2f2f2;
   outline: none;
 }
+.date::-webkit-input-placeholder {
+    color: #000000;
+}
+.number::-moz-placeholder {
+    color: #000000;
+}
+.number::-webkit-input-placeholder {
+  color: #000000 ;
+  }
+.date::-moz-placeholder {
+       color: #000000;
+      }
 .date:hover,
 .number:hover{
   background-color: #ebebeb;
@@ -1032,10 +1053,10 @@ margin-top: -9px;
 }
 
 .form-searching-item-1 label{
-    margin-right: 19px;
+    margin-right: 17px;
 }
 .form-searching-item-2 label{
-    margin-right: 16px;
+    margin-right: 14px;
 }
 .form-searching-item-3 label{
     margin-right: 37px;
@@ -1171,7 +1192,7 @@ margin-top: -9px;
 
 }
 .filters-form{
-  padding: 27px 73px 35px 72px;
+  padding: 27px 73px 31px 72px;
   display: flex;
   width: 1200px;
 }
@@ -1212,9 +1233,10 @@ margin-top: -9px;
 .filter-checkbox {
   position: relative;
 
-  padding-left: 37px;
+  padding-left: 40px;
 
   cursor: pointer;
+      padding-top: 2px;
 }
 
 .filter-checkbox input[type="checkbox"] + .checkbox-indicator {
@@ -1312,7 +1334,7 @@ margin-top: -9px;
 .catalog-list li{
   border-top: 1px solid #e5e5e5;
   display: flex;
-  padding: 30px 73px 24px 73px;
+  padding: 30px 73px 25px 73px;
 }
 .catalog-list li:last-child{
   border-bottom: 1px solid #e5e5e5;
@@ -1413,7 +1435,7 @@ width: 110px;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   font-weight: 600;
   font-size: 16px;
@@ -1421,8 +1443,9 @@ width: 110px;
 }
 
 .price-controls {
+      width: 318px;
   height: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
    font-size: 0;
    position: relative;
@@ -1455,8 +1478,8 @@ width: 110px;
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 155px;
-  padding-left: 65px;
+  width: 147px;
+padding-left: 64px;
 }
 
 .price-controls input {
@@ -1512,7 +1535,8 @@ width: 110px;
 }
 .btn-transparent {
   display: block;
-  margin: 0 auto;
+  width: 138px;
+margin: 0 84px;
   padding: 6px 35px;
 
   font-size: 14px;
