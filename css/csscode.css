@@ -101,7 +101,6 @@ a {
   background-color: #ffffff;
   text-align: center;
 }
-}
 .features-list {
   list-style: none;
 }
@@ -415,7 +414,7 @@ background-color: #f2f2f2;
 
 
                           /*  СЕТКА */
-}
+
 .main-header-logo {
   width: 140px;
   height: 72px;
@@ -464,7 +463,7 @@ background-color: #f2f2f2;
   padding: 0;
 }
 .feutures-list{
-  padding: 0 !important;
+  padding: 0 ;
 }
 .main-image-1{
   margin: 0;
@@ -494,7 +493,7 @@ background-color: #f2f2f2;
   display: flex;
   margin: 0;
   list-style: none;
-  padding: 0 !important;
+  padding: 0 ;
   margin: 0;
 }
 .evidence-item{
@@ -724,7 +723,7 @@ margin-bottom: 22px;
 }
 .column-1 h3{
 width: 118px;
-margin-left: ;
+
 margin-left: 140px;
 }
 .last-feutures{
