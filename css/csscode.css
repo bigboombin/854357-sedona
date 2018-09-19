@@ -1019,7 +1019,7 @@ body {
      padding: 0;
      width: 117px;
      margin-right: 48px;
-     margin-top: 28px;
+     margin-top: 29px;
 }
  .sorting-list{
      margin: 0;
@@ -1039,15 +1039,20 @@ body {
 }
  .sorting-list li:nth-child(4){
      margin-right: 12px;
+     margin-top: 1px;
 }
- .sorting-switch svg {
+ .sorting-switch path {
      fill-opacity: 0.5;
 }
- .sorting-switch svg:hover, .sorting-switch svg:focus {
+ .sorting-switch path:hover, .sorting-switch path:focus {
      fill-opacity: 1;
 }
  .sorting-switch path:active {
      fill: #81b3d2;
+}
+.sorting-switch-active path{
+     fill: #81b3d2;
+     fill-opacity: 1;
 }
  .catalog-list{
      margin: 0;
@@ -1058,7 +1063,7 @@ body {
  .catalog-list li{
      border-top: 1px solid #e5e5e5;
      display: flex;
-     padding: 30px 73px 25px 73px;
+     padding: 29px 73px 25px 73px;
 }
  .catalog-list li:last-child{
      border-bottom: 1px solid #e5e5e5;
@@ -1108,7 +1113,7 @@ body {
      margin: 0;
      padding: 0;
      margin-top: -6px;
-     margin-bottom: 7px;
+     margin-bottom: 9px;
 }
  .price{
      margin-bottom: 15px;
@@ -1130,7 +1135,7 @@ body {
 }
  .rating-2{
      width: 67px;
-     margin-left: 44px;
+     margin-left: 43px;
 }
  .rating-3{
      width: 43px;
@@ -1141,6 +1146,7 @@ body {
      height: 27px;
      text-align: center;
      padding-top: 3px;
+     padding-left: 2px;
 }
 /* СЛОЖНЫЙ ПОЛЗУНОК */
  .filter-range {
@@ -1196,7 +1202,8 @@ body {
 }
  .range-controls {
      position: relative;
-     margin-bottom: 32px;
+     margin-bottom: 31px;
+     width: 316px;
 }
  .range-controls .scale {
      height: 2px;
@@ -1232,7 +1239,7 @@ body {
      display: block;
      width: 138px;
      margin: 0 84px;
-     padding: 6px 35px;
+     padding: 6px 34px;
      font-size: 14px;
      line-height: 20px;
      color: #ffffff;
