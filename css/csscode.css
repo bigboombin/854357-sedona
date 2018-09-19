@@ -155,6 +155,7 @@ body {
      text-align: center;
      vertical-align: middle;
      border: none;
+     padding-top: 0px;
 }
  .open-form-button:hover, .open-form-button:focus {
      background-color: #604e43;
@@ -197,6 +198,8 @@ body {
      text-align: center;
      vertical-align: middle;
      border: none;
+     padding: 0;
+     padding-bottom: 5px;
 }
  .searching-button:hover, .searching-button:focus{
      background-color: #669ec0;
@@ -338,7 +341,7 @@ body {
 }
  .promo {
      display: block;
-     margin-bottom: 53px;
+     margin-bottom: 52px;
 }
  .promo-image {
      margin: 0;
@@ -350,11 +353,11 @@ body {
      padding: 0;
      width: 441px;
      text-align: center;
-     margin-left: 378px;
+     margin-left: 379px;
 }
  .features-caption{
      margin: 0;
-     margin-bottom: 50px;
+     margin-bottom: 51px;
      padding: 0;
 }
  .features {
@@ -379,8 +382,6 @@ body {
      display: block;
      margin: 0;
      padding: 0;
-}
- .feuture-item:first-child {
 }
  .feuture-item:nth-child(2){
      display: flex;
@@ -481,12 +482,12 @@ body {
 }
  .feuture-item-head-1{
      text-align: center;
-     padding: 27px 51px 0px 50px;
+     padding: 26px 51px 0px 50px;
 }
  .feuture-item-head-1 h3{
      display: block;
      width: 120px;
-     margin-left: 90px;
+     margin-left: 89px;
      margin-bottom: 24px;
 }
  .feuture-item-number-1{
@@ -501,12 +502,12 @@ body {
 }
  .feuture-item-head-2{
      text-align: center;
-     padding: 26px 51px 0px 48px;
+     padding: 25px 51px 0px 48px;
 }
  .feuture-item-head-2 h3{
      width: 151px;
-     margin-left: 75px;
-     margin-bottom: 24px;
+     margin-left: 77px;
+     margin-bottom: 25px;
 }
  .feuture-item-number-2{
      margin: 0;
@@ -525,7 +526,7 @@ body {
  .evidence-item-1 h4 {
      margin: 0;
      padding: 0;
-     margin-bottom: 25px;
+     margin-bottom: 24px;
 }
  .evidence-item-1 p {
      width: 299px;
@@ -533,13 +534,13 @@ body {
      padding: 0;
 }
  .evidence-item-2{
-     padding: 161px 51px 82px 49px;
+     padding: 161px 51px 82px 50px;
      text-align: center;
 }
  .evidence-item-2 h4 {
      margin: 0;
      padding: 0;
-     margin-bottom: 25px;
+     margin-bottom: 24px;
 }
  .evidence-item-2 p {
      width: 299px;
@@ -547,13 +548,13 @@ body {
      padding: 0;
 }
  .evidence-item-3{
-     padding: 161px 51px 81px 49px;
+     padding: 161px 51px 81px 50px;
      text-align: center;
 }
  .evidence-item-3 h4 {
      margin: 0;
      padding: 0;
-     margin-bottom: 25px;
+     margin-bottom: 24px;
 }
  .evidence-item-3 p {
      width: 299px;
@@ -562,12 +563,12 @@ body {
 }
  .columns{
      text-align:center;
-     padding-top: 48px;
+     padding-top: 47px;
 }
  .columns h3{
      padding: 0;
      margin: 0;
-     margin-bottom: 24px;
+     margin-bottom: 25px;
 }
  .column-1 h3{
      width: 118px;
@@ -602,7 +603,7 @@ body {
  .feuture-item-description-5{
      margin: 0;
      width: 249px;
-     margin-left: 74px ;
+     margin-left: 75px ;
 }
  .columns {
      padding-bottom: 45px;
@@ -616,7 +617,7 @@ body {
      line-height: 24px;
 }
  .searching-main-info{
-     margin-bottom: 45px;
+     margin-bottom: 47px;
 }
  .features{
      margin-bottom: 57px;
@@ -660,7 +661,7 @@ body {
 }
 /* footer стили */
  .main-footer {
-     margin-top: -121px;
+     margin-top: -126px;
      color: #000000;
      background-color: rgba(255, 255, 255, 0.8);
      padding-bottom: 37px;
@@ -736,6 +737,10 @@ body {
  .footer-copyright-button:active path{
      fill :#bdbbbc
 }
+ .social-button:active path{
+     fill-opacity: 0.5;
+ }
+
 /* Микроразметка формы */
  .open-form-button {
      display: block;
@@ -787,7 +792,7 @@ body {
  .date{
      box-sizing: border-box;
      width: 346px;
-     padding: 5px 13px 4px 13px;
+     padding: 5px 13px 4px 10px;
      padding-right: 51px;
      font: inherit;
      font-size: 14px;
