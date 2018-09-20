@@ -23,7 +23,6 @@ body {
      position: relative;
      box-shadow: 0 -10px 30px 10px #dbdbdb;
      background-color: #ffffff;
-
 }
  .visually-hidden {
      position: absolute;
@@ -59,7 +58,7 @@ body {
  .site-navigation a:focus{
      color: #cacaca;
 }
-.site-navigation-item-active a{
+ .site-navigation-item-active a{
      color: #766357 ;
 }
  .features-caption{
@@ -181,8 +180,8 @@ body {
      border: 2px solid #ebebeb;
 }
  .form-searching-item input:hover .open-calendar{
-   background-color: #ebebeb;
- }
+     background-color: #ebebeb;
+}
  .form-searching-item input:focus{
      background-color: transparent;
      border: 2px solid #e5e5e5;
@@ -357,10 +356,8 @@ body {
 }
  .features-caption{
      margin: 0;
-     margin-bottom: 51px;
+     margin-bottom: 49px;
      padding: 0;
-}
- .features {
 }
  .feutures-list{
      list-style: none;
@@ -620,7 +617,7 @@ body {
      margin-bottom: 47px;
 }
  .features{
-     margin-bottom: 57px;
+     margin-bottom: 55px;
 }
 /* ДЕКОРАТИВНЫЕ ЭЛЕМЕНТЫ */
  .evidence-item{
@@ -707,7 +704,7 @@ body {
      background-color: #5496bd
 }
  .main-footer-inner{
-    position: static;
+     position: static;
 }
  .footer-copyright{
      text-align: center;
@@ -739,8 +736,7 @@ body {
 }
  .social-button:active path{
      fill-opacity: 0.5;
- }
-
+}
 /* Микроразметка формы */
  .open-form-button {
      display: block;
@@ -760,6 +756,7 @@ body {
      margin-top: 2px;
      z-index: 14;
      margin-top: -1px;
+     box-shadow: 0 3px 90px -30px #000000;
 }
  .search-modal {
      padding: 55px;
@@ -776,7 +773,7 @@ body {
 }
  .quantity-block {
      display: flex;
-     margin-bottom: 54px;
+     margin-bottom: 52px;
      width: 459px;
      justify-content: space-between;
 }
@@ -1050,7 +1047,7 @@ body {
  .sorting-switch path:active {
      fill: #81b3d2;
 }
-.sorting-switch-active path{
+ .sorting-switch-active path{
      fill: #81b3d2;
      fill-opacity: 1;
 }
@@ -1116,7 +1113,7 @@ body {
      margin-bottom: 9px;
 }
  .price{
-     margin-bottom: 15px;
+     margin-bottom: 12px;
 }
  .main-footer-inner{
      margin-top: 10px;
@@ -1152,7 +1149,6 @@ body {
  .filter-range {
      width: 314px;
      margin: 0 auto;
-    /* для демо */
      color: #ffffff;
      text-transform: uppercase;
 }
