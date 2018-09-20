@@ -21,7 +21,7 @@ body {
      width: 1200px;
      margin: 0 auto;
      position: relative;
-     box-shadow: 0 -10px 30px 10px #dbdbdb;
+     box-shadow: 0 7px 15px 0 rgba(0,1,1,.15);
      background-color: #ffffff;
 }
  .visually-hidden {
@@ -756,7 +756,7 @@ body {
      margin-top: 2px;
      z-index: 14;
      margin-top: -1px;
-     box-shadow: 0 3px 90px -30px #000000;
+     box-shadow: 0 5px 15px 0 rgba(0,1,1,.2);;
 }
  .search-modal {
      padding: 55px;
